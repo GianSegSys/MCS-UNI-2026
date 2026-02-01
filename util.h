@@ -1,5 +1,5 @@
 // 1. Bernaola Gayoso - César Raúl
-// int addition(int a, int b);
+int addition(int a, int b);
 
 // 2. Cuadros-Vargas Ernesto
 void intercambiar(int &a, int &b);
@@ -31,6 +31,7 @@ int fibonacci(int n);
 
 // 10. Suarez Maciel Susana Isabel
 // average()
+float average(int x, int y);
 
 // 11. Tellez Jhon
 // sumar 10 numeros naturales
@@ -40,6 +41,7 @@ int fibonacci(int n);
 
 // 13. Vilca Aguilar Luis
 // root
+float raiz(float a);
 
 // 14. Vinatea Chávez Camilo Jorge
 float power(float base, int exponent);

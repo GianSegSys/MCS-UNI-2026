@@ -9,7 +9,10 @@ int main(){
     float f1, f2, f3, base, result;
 
 // 1. Bernaola Gayoso - César Raúl
-
+    std::cout << "Demo Bernaola Gayoso Cesar" << std::endl;
+    x = 10, y = 30;
+    r = addition(x, y);
+    std::cout << "la suma de x=" << x << " y=" << y << " es: " << r << "\n\n";
 
 // 2. Cuadros-Vargas Ernesto
     std::cout << "Demo Cuadros Vargas Ernesto" << std::endl;
@@ -55,6 +58,9 @@ int main(){
 
 // 10. Suarez Maciel Susana Isabel
 // average()
+    std::cout << "Demo Susana Suarez Maciel" << std::endl;
+    float prom = average(x,y);
+    std::cout << "Promedio(x,y)=" << prom << "\n\n";
 
 // 11. Tellez Jhon
 // sumar 10 numeros naturales
