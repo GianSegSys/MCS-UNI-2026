@@ -34,7 +34,6 @@ int main(){
     f1 = 40; f2 = 50;
     f3 = division(f1, f2);
     std::cout << f1 << "/" << f2 << " = " << f3 << "\n" ;
-    std::cout << "\n" ;
 
 // 6. Mallaupoma Cesar
 // genera un numero aleatorio
