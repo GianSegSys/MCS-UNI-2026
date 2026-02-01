@@ -50,6 +50,7 @@ int suma = 0;
     for (int i =0;i>=x;i++)
     {
         suma = suma + i;
+        
     }
     std::cout<<"La suma es: "<<suma<< "\n\n";
 
