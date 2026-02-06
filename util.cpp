@@ -30,13 +30,7 @@ int generarNumAleatorio(){
 }
 
 // 7. Miranda Zarate Jorge Luis
-unsigned int factorial(unsigned int number){
-    unsigned int result = 1;
-    for(int i=number; i > 0; i--){
-        result *= i;
-    }
-    return result;
-}
+// Los template se implementan en el .h, no en el .cpp
 
 // 8. Riveros Guevara
 
