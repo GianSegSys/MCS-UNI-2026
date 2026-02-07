@@ -87,9 +87,12 @@ T average(const T& a, const T& b){
 
 // 11. Tellez Jhon
 // sumar 10 numeros naturales
-
-
-int numero( int x);
+T11 SumaPrimero10(T11 x){
+    T11 suma = 0;
+    for(T11 i = 1; i <= x; ++i)
+        suma += i;
+    return suma;
+}
 
 // 12. Valcarcel Julian
 // float round(float f, int n)
@@ -139,6 +142,7 @@ void DemoInicialCuadrosVargas();
 // 12. Valcarcel Julian
 
 // 13. Vilca Aguilar Luis
+void DemoInicialVilcaAguilar();
 
 // 14. Vinatea Chávez Camilo Jorge  
 

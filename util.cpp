@@ -1,6 +1,6 @@
+#include <iostream>
 #include <cmath>
 #include <cstdlib>
-#include "util.h"
 #include "util.h"
 
 // 1. Bernaola Gayoso - César Raúl
@@ -167,12 +167,8 @@ void DemoInicial(){
 
 // 13. Vilca Aguilar Luis
 // root
-    {
-    std::cout << "Demo Vilca Aguilar Luis" << std::endl;
-    F1 L1 = 23.0;
-    raiz(L1);
-    std::cout << "La raiz (" << L1 << ") = " << raiz(L1) << "\n\n";
-    }
+    DemoInicialVilcaAguilar();
+    
 // 14. Vinatea Chávez Camilo Jorge
     {
     std::cout << "Demo Vinatea Camilo" << std::endl;
@@ -229,5 +225,12 @@ void DemoInicialCuadrosVargas(){
 // 12. Valcarcel Julian
 
 // 13. Vilca Aguilar Luis
+
+void DemoInicialVilcaAguilar(){
+    std::cout << "Demo Vilca Aguilar Luis" << std::endl;
+    F1 L1 = 23.0;
+    raiz(L1);
+    std::cout << "La raiz (" << L1 << ") = " << raiz(L1) << "\n\n";
+}
 
 // 14. Vinatea Chávez Camilo Jorge  
