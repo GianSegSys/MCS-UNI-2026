@@ -156,8 +156,6 @@ void DemoInicialCuadrosVargas(){
     std::cout << "str1=" << str1 << " str2=" << str2 << "\n";
 }
 
-
-
 // 3. Diaz Tapia Adderly
 void DemoInicialDiazTapia(){
     std::cout << "Demo Adderly Díaz Tapia" << std::endl;
