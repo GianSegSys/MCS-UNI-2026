@@ -3,10 +3,9 @@
 #include <cmath>
 #include "types.h"
 
-
 // 1. Bernaola Gayoso - César Raúl
 template <typename T>
-T addition(T a, T b) { 
+T addition(T a, T b) {
     return a + b;
 }
 
@@ -141,6 +140,7 @@ void DemoInicialMirandaZarate();
 // 8. Riveros Guevara
 void DemoInicialRiverosGuevara();
 // 9. Segovia Giancarlo
+void DemoInicialSegoviaGiancarlo();
 
 // 10. Suarez Maciel Susana Isabel.
 void DemoInicialSusana();

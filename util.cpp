@@ -96,11 +96,8 @@ void DemoInicial(){
 
 // 9. Segovia Giancarlo
 // fibonacci
-    {
-    std::cout << "Demo Giancarlo Segovia" << std::endl;
-    x = 6;
-    std::cout << "Fibonacci de " << x << " es " << fibonacci(x) << "\n\n";
-    }
+    DemoInicialSegoviaGiancarlo();
+
 // 10. Suarez Maciel Susana Isabel
 // average()
     DemoInicialSusana();
@@ -109,7 +106,7 @@ void DemoInicial(){
 // sumar 10 numeros naturales
     {
     std::cout << "Demo Jhon Tellez Heredia" << std::endl;
-    
+
     // TODO: no ingresar valores
     x = 10;
     // TODO: verificar la comparacion
@@ -212,6 +209,12 @@ void DemoInicialRiverosGuevara(){
         std::cout << n << " no es primo\n\n";
 }
 // 9. Segovia Giancarlo
+void DemoInicialSegoviaGiancarlo() {
+    int x;
+    std::cout << "Demo Giancarlo Segovia" << std::endl;
+    x = 6;
+    std::cout << "Fibonacci de " << x << " es " << fibonacci(x) << "\n\n";
+}
 
 // 10. Suarez Maciel Susana Isabel.
     void DemoInicialSusana(){
