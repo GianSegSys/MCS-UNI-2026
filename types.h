@@ -17,6 +17,8 @@ using T5 = float;
 // 6. Mallaupoma Cesar
 
 // 7. Miranda Zarate Jorge Luis
+using X1 = int;
+using X2  = long;
 
 // 8. Riveros Guevara
 using TH=int;

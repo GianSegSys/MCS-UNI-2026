@@ -33,8 +33,15 @@ float division(float &f1, float &f2);
 int generarNumAleatorio();
 
 // 7. Miranda Zarate Jorge Luis
-unsigned int factorial(unsigned int number);
 // factorial
+template <typename T>
+T factorial(T number){
+    T result = 1;
+    for(T i=number; i > 0; i--){
+        result *= i;
+    }
+    return result;
+}
 
 // 8. Riveros Guevara
 // IsPrime
