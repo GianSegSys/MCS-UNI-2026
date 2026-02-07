@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstdlib>
 #include "util.h"
+#include "util.h"
 
 // 1. Bernaola Gayoso - César Raúl
 // Implementacion especializada de adicion para IntParam
@@ -84,9 +85,7 @@ void DemoInicial(){
 
 // 3. Diaz Tapia Adderly
 // substraction
-    std::cout << "Demo Adderly Díaz Tapia" << std::endl;
-    Ts a1 = 10.1, a2=7.2;
-    std::cout<<"La resta es: " << subtraction(a1, a2) << "\n\n";
+    DemoInicialDiazTapia();
 
 // 4. Lopez Flores Royer Amed
 // multiplication
@@ -209,7 +208,11 @@ void DemoInicialCuadrosVargas(){
 }
 
 // 3. Diaz Tapia Adderly
-
+DemoInicialDiazTapia(){
+    std::cout << "Demo Adderly Díaz Tapia" << std::endl;
+    Ts a1 = 10.1, a2=7.2;
+    std::cout<<"La resta es: " << subtraction(a1, a2) << "\n\n";
+}
 // 4. Lopez Flores Royer Amed
 
 // 5. López Sandoval, Heiner

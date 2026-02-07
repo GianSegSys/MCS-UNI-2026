@@ -123,7 +123,7 @@ void DemoInicial();
 void DemoInicialCuadrosVargas();
 
 // 3. Diaz Tapia Adderly
-
+Void DemoInicialDiazTapia();
 // 4. Lopez Flores Royer Amed
 
 // 5. López Sandoval, Heiner
