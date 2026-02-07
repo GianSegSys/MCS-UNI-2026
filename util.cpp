@@ -199,19 +199,19 @@ void DemoInicialMirandaZarate(){
     X1 j0 = 10;
     std::cout << j0 << "! = " << factorial(j0) << "\n\n";
 
+// 8. Riveros Guevara
+void DemoInicialRiverosGuevara(){
+    std::cout << "Demo Riveros Guevara" << std::endl;
+    TH n = 29;
+    if (esPrimo(n)) {
+        std::cout << n << " es un número primo.\n\n";
+    } else {
+        std::cout << n << " no es un número primo.\n\n";
+    }
     X2 j1 = 13;
     std::cout << j1 << "! = " << factorial(j1) << "\n\n";
 }
 
-// 8. Riveros Guevara
-void DemoInicialRiverosGuevara(){
-    std::cout << "Demo Riveros Guevara Hipolito" << std::endl;
-    TH n = 29;
-    if (esPrimo(n))
-        std::cout << n << " es primo \n\n";
-    else
-        std::cout << n << " no es primo\n\n";
-}
 // 9. Segovia Giancarlo
 void DemoInicialSegoviaGiancarlo() {
     int x;
