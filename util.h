@@ -1,7 +1,8 @@
 #ifndef __UTIL_H__
 #define __UTIL_H__
-#include "types.h"
 #include <cmath>
+#include "types.h"
+
 
 // 1. Bernaola Gayoso - César Raúl
 template <typename T>
@@ -145,7 +146,7 @@ void DemoInicialCuadrosVargas();
 // 13. Vilca Aguilar Luis
 
 // 14. Vinatea Chávez Camilo Jorge  
-void demoinicialCamiloVinatea()
+void DemoInicialCamiloVinatea();
 
 
 #endif // __UTIL_H__

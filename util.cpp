@@ -214,7 +214,7 @@ void DemoInicialCuadrosVargas(){
 
 // 14. Vinatea Chávez Camilo Jorge 
 
-void demoinicialCamiloVinatea(){
+void DemoInicialCamiloVinatea(){
     std::cout << "Demo Vinatea Camilo" << std::endl;
 
     T2 base = 3.1415; 
