@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include "util.h"
 
-// g++ main.cpp util.cpp -o main
+// g++ -Wc++11-extensions main.cpp util.cpp -o main
 int main(){
     std::cout << "MCS-2026-PM\n";
     IntParam p1, p2, p3;
@@ -26,16 +26,17 @@ int main(){
     intercambiar(a, b);
     std::cout << "a=" << a << " b=" << b << "\n";
 
-    string str1 = "MCS", str2 = "UNI";
+    std::string str1 = "MCS", str2 = "UNI";
     intercambiar(str1, str2);
     std::cout << "str1=" << str1 << " str2=" << str2 << "\n";
 
 // 3. Diaz Tapia Adderly
 // substraction
-    std::cout << "Demo Adderly Díaz Tapia" << std::endl;
-    Ts d1 = 10.1; d2=7.2;
-    std::cout<<"La resta es: " << subtraction(d1, d2) << "\n\n";
-
+    {
+        std::cout << "Demo Adderly Díaz Tapia" << std::endl;
+        Ts d1 = 10.1; d2=7.2;
+        std::cout<<"La resta es: " << subtraction(d1, d2) << "\n\n";
+    }
 // 4. Lopez Flores Royer Amed
 // multiplication
     std::cout << "Demo Lopez Flores Royer Amed" << std::endl;
@@ -62,33 +63,36 @@ int main(){
 
 // 8. Riveros Guevara
 // IsPrime
+    {
     std::cout << "Demo Riveros Guevara Hipolito" << std::endl;
     TH n = 29;
     if (esPrimo(n))
         std::cout << n << " es primo \n\n";
     else
         std::cout << n << " no es primo\n\n";
-
+    
 
 // 9. Segovia Giancarlo
 // fibonacci
+    {
     std::cout << "Demo Giancarlo Segovia" << std::endl;
     x = 6;
     std::cout << "Fibonacci de " << x << " es " << fibonacci(x) << "\n\n";
-
+    
 // 10. Suarez Maciel Susana Isabel
 // average()
+    {
     std::cout << "Demo Susana Suarez Maciel" << std::endl;
     float prom = average(x,y);
     std::cout << "Promedio(x,y)=" << prom << "\n\n";
-
+    }
 // 11. Tellez Jhon
 // sumar 10 numeros naturales
 
     int suma = 0;
     std::cout<<"Ingrese el numero 10";
     // TODO: no ingresar valores
-    std::cin>>x;
+    x = 10;
     // TODO: verificar la comparacion
     // TODO: cambiar a ++i
     // TODO: como solo es 1 instruccion, no necesitas {}
@@ -106,17 +110,20 @@ int main(){
 
 // 13. Vilca Aguilar Luis
 // root
+    {
     std::cout << "Demo Vilca Aguilar Luis" << std::endl;
     f1 = 23.0;
     raiz(f1);
     std::cout << "La raiz (" << f1 << ") = " << raiz(f1) << "\n\n";
-  
+    }
+
 // 14. Vinatea Chávez Camilo Jorge
+    {
     std::cout << "Demo Vinatea Camilo" << std::endl;
     T14 base = 3.1415; 
     T1 exponent = 3;
     T14 result = power(base, exponent);
     std::cout << base << " ^ " << exponent << " = " << result << "\n\n";
-    
+    }
     return 0;
 }
