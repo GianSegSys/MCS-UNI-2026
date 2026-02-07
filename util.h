@@ -129,7 +129,7 @@ void DemoInicialCuadrosVargas();
 // 5. López Sandoval, Heiner
 
 // 6. Mallaupoma Cesar
-
+void DemoInicialCesarMallaupoma();
 // 7. Miranda Zarate Jorge Luis
 
 // 8. Riveros Guevara

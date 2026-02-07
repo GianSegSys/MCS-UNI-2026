@@ -105,10 +105,7 @@ void DemoInicial(){
     std::cout << f1 << "/" << f2 << " = " << f3 << "\n" ;
 // 6. Mallaupoma Cesar
 // genera un numero aleatorio
-    std::cout << "Demo Cesar Mallaupoma Orellana" << std::endl;
-    srand(1);
-    MiInt aleatorio = generarNumAleatorio<MiInt>();
-        std::cout << "El numero aleatorio generado es "<< aleatorio  << "\n\n";
+   DemoInicialCesarMallaupoma();
 
 // 7. Miranda Zarate Jorge Luis
     std::cout << "Demo Miranda Zarate Jorge" << std::endl;
@@ -215,6 +212,13 @@ void DemoInicialCuadrosVargas(){
 // 5. López Sandoval, Heiner
 
 // 6. Mallaupoma Cesar
+void DemoInicialCesarMallaupoma(){
+    // genera un numero aleatorio
+    std::cout << "Demo Cesar Mallaupoma Orellana" << std::endl;
+    srand(1);
+    MiInt aleatorio = generarNumAleatorio<MiInt>();
+    std::cout << "El numero aleatorio generado es "<< aleatorio  << "\n\n";
+}
 
 // 7. Miranda Zarate Jorge Luis
 
