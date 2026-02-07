@@ -15,7 +15,7 @@ using MultParamInt = int;
 // 5. López Sandoval, Heiner
 using T5 = float;
 // 6. Mallaupoma Cesar
-
+using MiInt = int;
 // 7. Miranda Zarate Jorge Luis
 using X1 = int;
 using X2  = long;

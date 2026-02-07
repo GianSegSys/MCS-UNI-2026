@@ -58,7 +58,7 @@ int main(){
 // genera un numero aleatorio
     std::cout << "Demo Cesar Mallaupoma Orellana" << std::endl;
     srand(1);
-    int aleatorio = generarNumAleatorio();
+    MiInt aleatorio = generarNumAleatorio<MiInt>();
         std::cout << "El numero aleatorio generado es "<< aleatorio  << "\n\n";
 
 // 7. Miranda Zarate Jorge Luis
