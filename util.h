@@ -139,6 +139,7 @@ void DemoInicialCuadrosVargas();
 // 10. Suarez Maciel Susana Isabel.
 
 // 11. Tellez Jhon
+void DemoInicialJhoinTellez();
 
 // 12. Valcarcel Julian
 
