@@ -1,9 +1,10 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -Wunused-variable -Wall -g -pthread # Añadido -pthread
+CXXFLAGS = -std=c++20 -Wall -g -pthread # Añadido -pthread
 LDFLAGS = -pthread # Añadido -pthread
 
 TARGET = main
-SRCS = main.cpp util.cpp
+SRCS = main.cpp util.cpp Pointers.cpp
+
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(TARGET)
