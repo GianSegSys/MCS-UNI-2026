@@ -15,5 +15,6 @@ void DemoBasico();
 void DemoParametros();
 
 void DemoPunteros();
+void DemoEstructuras();
 
 #endif // __POINTERS_H__

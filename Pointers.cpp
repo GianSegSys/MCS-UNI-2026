@@ -94,6 +94,7 @@ void DemoParametros(){
     aviso("Valor de x después de llamar a f4: ", x);
     aviso("Valor de pi después de llamar a f4: ", pi);
 
+    pi = &x;
     cout << "f5" <<endl;
     x = 10; y = x+20;
     f5(pp); // Llama a la función f5 pasando el puntero a pi
@@ -101,7 +102,52 @@ void DemoParametros(){
     aviso("Valor de pi después de llamar a f5: ", pi);
 }
 
+struct S{
+    T1   a;
+    T2   b;
+    char nom[30];
+};
+
+void PrintS(S &s){
+    s.a = 100; // Modifica el miembro a de la estructura s
+    cout <<   "a  : " << s.a
+         << ", b  : " << s.b
+         << ", nom: " << s.nom << endl;
+}
+
+void PrintT(S *pS){
+    pS->b = 7.13; // Modifica el miembro b de la estructura a través del puntero pS
+    cout <<   "a  : " << pS->a
+         << ", b  : " << pS->b
+         << ", nom: " << pS->nom << endl;
+}
+
+void DemoEstructuras(){
+    S s1 = {10, 3.14, "Ejemplo"};
+    s1.b = 2.718;
+    cout << "Acceso a miembros de la estructura directamente:" << endl;
+    cout << "s1.a  : " << s1.a   << endl; // Acceso al miembro a
+    cout << "s1.b  : " << s1.b   << endl; // Acceso al miembro b
+    cout << "s1.nom: " << s1.nom << endl; // Acceso al miembro nom
+    
+    S *ps = &s1;
+    ps->a = 20; // Modifica el miembro a a través del puntero
+    cout << "Acceso a miembros de la estructura usando el puntero ps:" << endl;
+    cout << "s1.a  : " << ps->a   << endl; // Acceso al miembro a
+    cout << "s1.b  : " << ps->b   << endl; // Acceso al miembro b
+    cout << "s1.nom: " << ps->nom << endl; // Acceso al miembro nom
+
+    cout << "Usando la función PrintS para mostrar los valores de la estructura:" << endl;
+    PrintS(s1); // Llama a la función PrintS pasando la estructura por referencia
+    PrintS(*ps); // Llama a la función PrintS pasando la estructura a través del puntero
+
+    cout << "Usando la función PrintT para mostrar los valores de la estructura:" << endl;
+    PrintT(&s1); // Llama a la función PrintT pasando la direccion de la estructura 
+    PrintT(ps);  // Llama a la función PrintT pasando la estructura a través del puntero
+}
+
 void DemoPunteros(){
     DemoBasico();
     DemoParametros();
+    DemoEstructuras();
 }
