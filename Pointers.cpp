@@ -149,11 +149,15 @@ void DemoEstructuras(){
     };
     as[0].a = 20; // Modifica el miembro a del primer elemento del arreglo
     cout << "Imprimiendo estructuras en un arreglo (PrintS):" << endl;
-    for(int i = 0; i < 3; ++i)
+    for(auto i = 0; i < 3; ++i)
         PrintS(as[i]);
     cout << "Imprimiendo estructuras en un arreglo (PrintT):" << endl;
-    for(int i = 0; i < 3; ++i)
+    for(auto i = 0; i < 3; ++i)
         PrintT(&as[i]);
+    cout << "Imprimiendo con un bucle mas corto:" << endl;
+    for(auto &s1 : as)
+        PrintS(s1);
+    cout << "sizeof(S): " << sizeof(S) << endl;
 }
 
 void DemoPunteros(){
