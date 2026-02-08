@@ -109,17 +109,14 @@ struct S{
 };
 
 void PrintS(S &s){
-    s.a = 100; // Modifica el miembro a de la estructura s
+    // s.a = 100; // Modifica el miembro a de la estructura s
     cout <<   "a  : " << s.a
          << ", b  : " << s.b
          << ", nom: " << s.nom << endl;
 }
 
 void PrintT(S *pS){
-    pS->b = 7.13; // Modifica el miembro b de la estructura a través del puntero pS
-    cout <<   "a  : " << pS->a
-         << ", b  : " << pS->b
-         << ", nom: " << pS->nom << endl;
+    PrintS(*pS);
 }
 
 void DemoEstructuras(){
@@ -144,6 +141,19 @@ void DemoEstructuras(){
     cout << "Usando la función PrintT para mostrar los valores de la estructura:" << endl;
     PrintT(&s1); // Llama a la función PrintT pasando la direccion de la estructura 
     PrintT(ps);  // Llama a la función PrintT pasando la estructura a través del puntero
+
+    S as[3] = {
+        {1, 1.1, "Uno"},
+        {2, 2.2, "Dos"},
+        {3, 3.3, "Tres"}
+    };
+    as[0].a = 20; // Modifica el miembro a del primer elemento del arreglo
+    cout << "Imprimiendo estructuras en un arreglo (PrintS):" << endl;
+    for(int i = 0; i < 3; ++i)
+        PrintS(as[i]);
+    cout << "Imprimiendo estructuras en un arreglo (PrintT):" << endl;
+    for(int i = 0; i < 3; ++i)
+        PrintT(&as[i]);
 }
 
 void DemoPunteros(){
