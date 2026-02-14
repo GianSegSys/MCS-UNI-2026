@@ -23,6 +23,10 @@ void DemoBits();
 
 // 5. López Sandoval, Heiner
 
+    // Invertir los bits de un numero
+    UI invertirBits(UI &x, UI CantidadBits) ;
+
+
 // 6. Mallaupoma Cesar
 
 // 7. Miranda Zarate Jorge Luis
@@ -33,6 +37,8 @@ void DemoBits();
 void reversebits(UI &x);
 
 // 10. Suarez Maciel Susana Isabel.
+    // Cuenta la cantidad de bits en 1 en x (popcount)
+    int countOnes(UI x);
 
 // 11. Tellez Jhon
 
