@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "Pointers.h"
-#include "util.h"
 
 using namespace std;
 
@@ -104,26 +103,9 @@ void DemoParametros(){
     aviso("Valor de pi después de llamar a f5: ", pi);
 }
 
-struct S{
-    T1   a;
-    T2   b;
-    char nom[7];
-};
-
-void PrintS(S &s){
-    // s.a = 100; // Modifica el miembro a de la estructura s
-    cout <<   "a  : " << s.a
-         << ", b  : " << s.b
-         << ", nom: " << s.nom << endl;
-}
-
-void PrintT(S *pS){
-    PrintS(*pS);
-}
-
 void DemoEstructuras(){
-    S s1 = {10, 3.14, "ABC"};
-    s1.b = 2.718;
+    S s1 = {10, "ABC", 3.14}, &rstr = s1;
+    s1.b = 2.718; rstr.nom[0] = 'X';
     cout << "Acceso a miembros de la estructura directamente:" << endl;
     cout << "s1.a  : " << s1.a   << endl; // Acceso al miembro a
     cout << "s1.b  : " << s1.b   << endl; // Acceso al miembro b
@@ -145,9 +127,9 @@ void DemoEstructuras(){
     PrintT(ps);  // Llama a la función PrintT pasando la estructura a través del puntero
 
     S as[3] = {
-        {1, 1.1, "Uno"},
-        {2, 2.2, "Dos"},
-        {3, 3.3, "Tre"}
+        {1, "Uno", 1.1},
+        {2, "Dos", 2.2},
+        {3, "Tre", 3.3}
     };
     as[0].a = 20; // Modifica el miembro a del primer elemento del arreglo
     cout << "Imprimiendo estructuras en un arreglo (PrintS):" << endl;
@@ -159,9 +141,10 @@ void DemoEstructuras(){
     cout << "Imprimiendo con un bucle mas corto:" << endl;
     for(auto &s1 : as)
         PrintS(s1);
-    cout << "sizeof(S): " << sizeof(S) << endl;
-    cout << "sizeof(T1): " << sizeof(T1) << endl;
-    cout << "sizeof(T2): " << sizeof(T2) << endl;
+
+    U u1 = {10}; // Inicializa el miembro a del union
+    cout << "Valor de u1.nom: " << u1.nom << endl; //
+    PrintS(u1);
 }
 
 void DemoChars(){

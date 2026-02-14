@@ -5,6 +5,8 @@ using IntParam = int;
 // #ifdef (__BIG__)
 using T1 = long long;
 using T2 = float;
+using UI = unsigned int;
+
 // #else
 // using T1 = char;
 // using T2 = double;
